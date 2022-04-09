@@ -1,0 +1,108 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  margin: 0 25px;
+}
+
+.toolbar #twitter-logo:hover {
+  opacity: 0.8;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.content {
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  align-items: center;
+  height: 100%;
+}
+
+
+.list {
+  mat-card-subtitle {
+    border-radius: 20px;
+    padding: 0.5em;
+    width: fit-content;
+    color: #4D4D4D;
+    font-weight: 500;
+  }
+
+  height: 100%;
+  top: 1em;
+}
+
+.list.todo {
+  mat-card-subtitle {
+    background: #E1E4E8;
+  }
+}
+
+.list.doing {
+  mat-card-subtitle {
+    background: #F0E7F6;
+  }
+}
+
+.list.done {
+  mat-card-subtitle {
+    background: #CBDFD8;
+  }
+}
+
+// Levar para dentro do componente
+.card {
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+
+  mat-card-title {
+    border-radius: 20px;
+    padding: 0.5em;
+    width: fit-content;
+    color: #4D4D4D;
+    font-weight: 500;
+  }
+
+  mat-card-actions {
+    height: 2em;
+  }
+
+  .foward {
+    color: red;
+  }
+
+  .next {
+    color: #1976d2;
+  }
+
+}
+
+.card:not(:first-of-type) {
+  margin-top: 1em;
+}
+
+.new-card {
+  text-align: center;
+  padding: 1em;
+  color: #1976d2;
+}
